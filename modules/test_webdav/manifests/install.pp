@@ -1,25 +1,34 @@
 class test_webdav::install {
+    # httpd24をインストール
     package { 'httpd24':
       ensure => present,
-    } ->
-    file { "/var/www/html/webdav":  # Creating Document Root
+    ## -> は順序関係を指定
+    } #->
+    /*
+    # ディレクトリを作成
+    file { "/var/www/html/webdav":
       ensure => "directory",
-      owner  => "apache",
-      group  => "apache",
-      mode   => 750,
+      owner  => "root",
+      group  => "root",
+      mode   => "0750",
     } ->
- file { '/var/www/html/webdav/index.html': # Creating Index file
+    # ファイルを作成
+    file { '/var/www/html/webdav/index.html':
      ensure  => file,
      content => "Index HTML Is Managed By Puppet",
-     mode    => '0644',
-   } ->
-    file { '/etc/httpd/conf.d/webdav.conf': # Path to the file on client machine
+     mode    => "0644",
+    } ->
+    # webdavを作成
+    file { '/etc/httpd/conf.d/webdav.conf':
       ensure => file,
-      mode   => '0600',
-      source => 'puppet:///modules/test_webdav/webdav01.conf', # Path to the custom file on puppet server
-    } ~>
+      mode   => "060",
+      ## URL指定の際にfilesは不要
+      source => "puppet:///modules/test_webdav/webdav01.conf",
+    } ->
+    # サービス起動&自動起動
     service { 'httpd':
       ensure => running,
       enable => true,
     }
+    */
 }
