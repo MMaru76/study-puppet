@@ -5,7 +5,7 @@ class named::named_conf {
         owner   =>  root,
         group   =>  named,
         mode    =>  640,
-        source  =>  "puppet://modules/named/conf/named.conf"
+        source  =>  "puppet:///modules/named/na_conf/named.conf"
     }
 
     file { "0.0.10.zone" :
@@ -13,7 +13,7 @@ class named::named_conf {
         owner   =>  root,
         group   =>  root,
         mode    =>  644,
-        source  =>  "puppet://modules/named/zone/0.0.10.zone"
+        source  =>  "puppet:///modules/named/na_zone/0.0.10.zone"
     }
 
     file { "1.0.10.zone" :
@@ -21,7 +21,7 @@ class named::named_conf {
         owner   =>  root,
         group   =>  root,
         mode    =>  644,
-        source  =>  "puppet://modules/named/zone/1.0.10.zone"
+        source  =>  "puppet:///modules/named/na_zone/1.0.10.zone"
     }
 
     file { "ma.local.zone" :
@@ -29,7 +29,7 @@ class named::named_conf {
         owner   =>  root,
         group   =>  root,
         mode    =>  644,
-        source  =>  "puppet://modules/named/zone/ma.local.zone"
+        source  =>  "puppet:///modules/named/na_zone/ma.local.zone"
     }
 
     service { named:

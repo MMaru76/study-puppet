@@ -5,7 +5,7 @@ class named::named_test {
         owner   =>  root,
         group   =>  root,
         mode    =>  640,
-        source  =>  "puppet:///modules/named/na_conf/test.conf"
+        source  =>  "puppet://modules/named/na_conf/test.conf"
     }
 
 }

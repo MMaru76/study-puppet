@@ -7,6 +7,6 @@ node ex_puppet {
         include named
 }
 
-node /^pupdns/ inherits ex_puppet {
-        include named
-}
+#node /^pupdns/ inherits ex_puppet {
+#        include
+#}
