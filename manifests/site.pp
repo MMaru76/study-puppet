@@ -4,7 +4,6 @@ node default inherits ex_puppet {
 }
 
 node ex_puppet {
-        include httpd
 }
 
 node /^pupdns/ inherits ex_puppet {
