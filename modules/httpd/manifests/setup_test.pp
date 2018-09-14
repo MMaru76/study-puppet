@@ -12,7 +12,7 @@ package { httpd24 : ensure => installed,}
         owner   => root,
         group   => root,
         mode    => 644,
-        source  => 'puppet:///modules/httpd/webdav.conf',
+        source  => 'puppet:///modules/httpd/webdav_conf/webdav.conf',
     }
 
     service { httpd:
