@@ -15,7 +15,7 @@ package { httpd24 : ensure => installed,}
         source  => 'puppet:///modules/httpd/webdav.conf',
     }
 
-    service { "httpd":
+    service { httpd:
         ensure      => running,
         hasstatus   => true,
         subscribe   =>  File["webdav.conf"],
