@@ -7,3 +7,6 @@ node ex_puppet {
         include named
 }
 
+node /^dns/ inherits ex_puppet {
+        include named
+}
