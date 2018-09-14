@@ -32,4 +32,10 @@ class named::conf {
         source  =>  "puppet://modules/named/zone/ma.local.zone"
     }
 
+    service { named:
+    	ensure =>running,
+    	hasstatus => true,
+    	subscribe => File['ma.local.zone'],
+    }
+
 }
