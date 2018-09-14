@@ -7,11 +7,11 @@ class httpd::setup_test {
     # resources
 package { httpd24 : ensure => installed,}
 
-    file { 'webdav.conf':
-        ensure  =>,
-        owner   => owner,
-        group   => group,
-        mode    => mode,
+    file { "webdav.conf" :
+        path    => "/etc/httpd/conf.d/webdav.conf",
+        owner   => root,
+        group   => root,
+        mode    => 644,
         source  => 'puppet:///modules/httpd/webdav.conf',
     }
 
