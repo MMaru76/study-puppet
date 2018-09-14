@@ -1,6 +1,6 @@
 class named {
 
     case $hostname {
-        'dns.ma.local' : { include named::named_conf }
+        'pupdns.ma.local' : { include named::named_conf }
     }
 }

@@ -3,7 +3,7 @@ sed -i s/\"UTC\"/\"Japan\"/ /etc/sysconfig/clock
 ln -sf /usr/share/zoneinfo/Japan /etc/localtime
 
 # private dns add
-sed -i "$ a DNS1=10.0.1.224" /etc/sysconfig/network-scripts/ifcfg-eth0
+sed -i "$ a DNS1=10.0.1.237" /etc/sysconfig/network-scripts/ifcfg-eth0
 
 # hostname add
 vim /etc/sysconfig/network

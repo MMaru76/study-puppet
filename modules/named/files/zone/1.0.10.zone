@@ -1,36 +1,11 @@
 $TTL 86400
-@       IN      SOA     dns.ma.local. root.ma.local. (
-                        2018081401      ;       serial
+@       IN      SOA     pupdns.ma.local. root.ma.local. (
+                        2018091401      ;       serial
                         21600   ;       refresh
                         3600    ;       retry
                         604800  ;       expire
                         2600    ;       minimum
                         )
-        IN      NS      dns.ma.local.
-224     IN      PTR     dns.ma.local.
-102     IN      PTR     ppms.ma.local.
-28      IN      PTR     webdav1.ma.local.
-45      IN      PTR     ppms2.ma.local.
-128     IN      PTR     ppms5.ma.local.
-169     IN      PTR     webdav2.ma.local.
-183     IN      PTR     webdav3.ma.local.
-57      IN      PTR     ppms6.ma.local.
-23      IN      PTR     git-puppet.ma.local.
-252     IN      PTR     webdav5.ma.local.
-82      IN      PTR     pup-ser-ma-local.
-222     IN      PTR     webdav6.ma.local.
-152     IN      PTR     lab.ma.local.
-48      IN      PTR     pup-ser01.ma.local.
-62      IN      PTR     pup-age01.ma.local.
-204     IN      PTR     pup-ser02.ma.local.
-130     IN      PTR     pup-age02.ma.local.
-21      IN      PTR     pup-age03.ma.local.
-161     IN      PTR     page01.ma.local.
-221     IN      PTR     live10.ma.local.
-63      IN      PTR     live11.ma.local.
-132     IN      PTR     efs01.ma.local.
-135     IN      PTR     livefs.ma.local
-247     IN      PTR     puppetserver.ma.local.
-94      IN      PTR     test10.ma.local.
-179     IN      PTR     oreo10.ma.local.
-145     IN      PTR     oreo11.ma.local.
+        IN      NS      pupdns.ma.local.
+237     IN      PTR     pupdns.ma.local.
+61      IN      PTR     test01.ma.local.

@@ -1,10 +1,9 @@
 $TTL 86400
-@       IN      SOA     dns.ma.local. root.ma.local. (
-                        2018081401      ;       serial
+@       IN      SOA     pupdns.ma.local. root.ma.local. (
+                        2018091401      ;       serial
                         21600   ;       refresh
                         3600    ;       retry
                         604800  ;       expire
                         2600    ;       minimum
                         )
-        IN      NS      dns.ma.local.
-81      IN      PTR     live.ma.local.
+        IN      NS      pupdns.ma.local.
