@@ -1,4 +1,4 @@
-class named::conf {
+class named::named_conf {
 
     file { "named.conf" :
         path    =>  "/etc/named.conf",
