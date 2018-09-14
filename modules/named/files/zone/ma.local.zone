@@ -1,0 +1,37 @@
+$TTL 86400
+@       IN      SOA     dns.ma.local. root.ma.local. (
+                        2018081401      ;       serial
+                        21600   ;       refresh
+                        3600    ;       retry
+                        604800  ;       expire
+                        2600    ;       minimum
+                        )
+        IN      NS   dns.ma.local.
+dns     IN      A    10.0.1.224
+ppms    IN      A    10.0.1.102
+live    IN      A    10.0.0.81
+webdav1 IN      A    10.0.1.28
+ppms2   IN      A    10.0.1.45
+ppms5   IN      A    10.0.1.128
+webdav2 IN      A    10.0.1.169
+ppms6   IN      A    10.0.1.57
+webdav3 IN      A    10.0.1.183
+git-puppet      IN      A       10.0.1.23
+webdav5 IN      A    10.0.1.252
+pup-ser IN      A    10.0.1.82
+webdav6 IN      A    10.0.1.222
+lab     IN      A    10.0.1.152
+pup-ser01       IN      A       10.0.1.48
+pup-age01       IN      A       10.0.1.62
+pup-ser02       IN      A       10.0.1.204
+pup-age02       IN      A       10.0.1.130
+pup-age03       IN      A       10.0.1.21
+page01  IN      A    10.0.1.161
+live10  IN      A    10.0.1.221
+live11  IN      A    10.0.1.63
+efs01   IN      A    10.0.1.132
+livefs  IN      A    10.0.1.135
+puppetserver    IN      A       10.0.1.247
+test10  IN      A    10.0.1.94
+oreo10  IN      A    10.0.1.179
+oreo11  IN      A    10.0.1.145

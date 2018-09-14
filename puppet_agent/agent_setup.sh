@@ -9,9 +9,7 @@ sed -i "$ a DNS1=10.0.1.224" /etc/sysconfig/network-scripts/ifcfg-eth0
 vim /etc/sysconfig/network
 
 # puppet repo add && install
-yum -y install http://yum.puppetlabs.com/el/6/products/x86_64/puppetlabs-release-22.0-1.noarch.rpm
-sed -i -e "s/enabled=1/enabled=0/g" /etc/yum.repos.d/puppetlabs.repo
-yum --enablerepo=puppetlabs-products,puppetlabs-deps -y install puppet
+yum -y install puppet3
 
 # puppet agent conf setup
 ## puppet server name add

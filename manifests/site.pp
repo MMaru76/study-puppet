@@ -1,6 +1,9 @@
-# 対象にしたいインスタンスを指定
-node 'pup-age02.ma.local' {
-        # クラス名/ディレクトリ名
-        include test_webdav
+node default inherits dev_streampack {
+        notify { "woof": message => "Did you define a node? This is the default node message." }
+        include test_page
 }
-node 
+
+
+node ex_puppet {
+        include named
+}
