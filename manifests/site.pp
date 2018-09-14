@@ -4,9 +4,8 @@ node default inherits ex_puppet {
 }
 
 node ex_puppet {
-        include named
 }
 
-#node /^pupdns/ inherits ex_puppet {
-#        include
-#}
+node /^pupdns/ inherits ex_puppet {
+        include named
+}
