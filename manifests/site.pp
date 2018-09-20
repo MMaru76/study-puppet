@@ -14,4 +14,6 @@ node /^test01/ inherits ex_puppet {
         include httpd
 }
 
-node /^dnsma/ inherits
+node /^dnsma/ inherits ex_puppet {
+        include named
+}
