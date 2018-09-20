@@ -7,5 +7,5 @@ $TTL 86400
                         2600    ;       minimum
                         )
         IN      NS      pupdns.ma.local.
-237     IN      PTR     pupdns.ma.local.
+178     IN      PTR     pupdns.ma.local.
 61      IN      PTR     test01.ma.local.
