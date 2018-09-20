@@ -1,8 +1,8 @@
 class named::named_conf {
 
-    package { 'bind' :
-        ensure => installed,
-    }
+    #package { 'bind' :
+    #    ensure => installed,
+    #}
 
     file { "named.conf" :
         path    =>  "/etc/named.conf",
