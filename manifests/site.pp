@@ -7,9 +7,11 @@ node ex_puppet {
 }
 
 node /^pupdns/ inherits ex_puppet {
-        include named
+        include test
 }
 
 node /^test01/ inherits ex_puppet {
         include httpd
 }
+
+node /^dnsma/ inherits
