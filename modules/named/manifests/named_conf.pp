@@ -39,7 +39,7 @@ class named::named_conf {
     service { named:
     	ensure =>running,
     	hasstatus => true,
-    	subscribe => File['ma.local.zone'],
+    	subscribe => File['ma.local.zone','1.0.10.zone','0.0.10.zone','named.conf'],
     }
 
 }

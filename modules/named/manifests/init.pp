@@ -1,6 +1,6 @@
 class named {
 
-    case $fqdn {
-        'dnsma.ma.local' : { include named::named_conf }
+    case $hostname {
+        'dnsma' : { include named::named_conf }
     }
 }
