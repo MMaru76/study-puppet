@@ -1,6 +1,6 @@
 class httpd {
 
     case $hostname {
-        'test01' : { include httpd::setup_test }
+        'hp' : { include httpd::setup_test }
     }
 }

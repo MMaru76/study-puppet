@@ -9,3 +9,4 @@ $TTL 86400
         IN      NS      dnsma.ma.local.
 dnsma   IN      A       10.0.1.44
 pupmas  IN      A       10.0.1.96
+hp      IN      A       10.0.1.190

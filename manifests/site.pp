@@ -10,7 +10,7 @@ node /^pupdns/ inherits ex_puppet {
         include test
 }
 
-node /^test01/ inherits ex_puppet {
+node /^hp/ inherits ex_puppet {
         include httpd
 }
 
