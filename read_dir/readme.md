@@ -4,7 +4,7 @@
 > [新人インフラ技術者のためのサーバー構築／運用自動化入門](http://www.atmarkit.co.jp/ait/series/1541/)
 
 - Qiitaの記事
-> [https://qiita.com/tukiyo3/items/54c32ecfb8cc6cd76073](https://qiita.com/tukiyo3/items/54c32ecfb8cc6cd76073)
+> [puppet入門1 準備編](https://qiita.com/tukiyo3/items/54c32ecfb8cc6cd76073)
 
 - スライド形式の素晴らしいサイト
 > [Puppet Tutorial](https://www.example42.com/tutorials/PuppetTutorial/)
