@@ -3,21 +3,21 @@
 # webdav setup
 #
 
-class httpd::setup_test {
+class httpd::setup_conf {
     # resources
 package { httpd24 : ensure => installed }
 
-    file { "webdav.conf" :
-        path    => "/etc/httpd/conf.d/webdav.conf",
+    file { "httpd.conf" :
+        path    => "/etc/httpd/conf/httpd.conf",
         owner   => root,
         group   => root,
         mode    => 644,
-        source  => 'puppet:///modules/httpd/webdav_conf/webdav.conf',
+        source  => 'puppet:///modules/httpd/httpd_conf/httpd.conf',
     }
 
     service { httpd:
         ensure      => running,
         hasstatus   => true,
-        subscribe   =>  File["webdav.conf"],
+        subscribe   =>  File["httpd.conf"],
     }
 }
