@@ -5,7 +5,7 @@
 
 class httpd::setup_test {
     # resources
-package { httpd24 : ensure => installed,}
+package { httpd24 : ensure => installed }
 
     file { "webdav.conf" :
         path    => "/etc/httpd/conf.d/webdav.conf",
