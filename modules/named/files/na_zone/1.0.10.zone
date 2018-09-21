@@ -8,4 +8,4 @@ $TTL 86400
                         )
         IN      NS      dnsma.ma.local.
 44      IN      PTR     dnsma.ma.local.
-237     IN      PTR     pupmas.ma.local.
+96      IN      PTR     pupmas.ma.local.
