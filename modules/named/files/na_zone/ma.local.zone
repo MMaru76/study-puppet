@@ -10,3 +10,4 @@ $TTL 86400
 dnsma   IN      A       10.0.1.44
 pupmas  IN      A       10.0.1.96
 hp      IN      A       10.0.1.190
+mco     IN      A       13.112.117.161

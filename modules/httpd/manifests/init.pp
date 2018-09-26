@@ -4,11 +4,11 @@ class httpd {
         'hp' : { include httpd::setup_webdav }
     }
 
-    case $hostname {
-        'XXX' : { include httpd::setup_22conf }
-    }
+    #case $hostname {
+    #    'XXX' : { include httpd::setup_22conf }
+    #}
 
     case $hostname {
-        'YYY' : { include httpd::setup_24conf }
+        'mco' : { include httpd::setup_24conf }
     }
 }
