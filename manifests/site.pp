@@ -17,3 +17,7 @@ node /^hp/ inherits ex_puppet {
 node /^dnsma/ inherits ex_puppet {
         include named
 }
+
+node /^mco/ inherits ex_puppet {
+        include httpd
+}
