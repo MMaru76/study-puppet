@@ -3,7 +3,7 @@
 # webdav setup
 #
 
-class httpd::setup_conf {
+class httpd::setup_22conf {
     # resources
 package { httpd : ensure => installed }
 
